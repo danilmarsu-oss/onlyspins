@@ -753,3 +753,15 @@
     /* Add the animation here */
     animation: bonus-pulse 2s infinite ease-in-out;
 }
+/* Базовий стиль для логотипа всюди */
+.brand-logo {
+    max-height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Щоб посилання-обгортка не схлопувалось */
+.brand-block a {
+    display: flex;
+    align-items: center;
+}
