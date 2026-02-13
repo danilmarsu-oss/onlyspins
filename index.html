@@ -11,41 +11,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-<input type="checkbox" id="nav-toggle">
+   <!-- Checkbox Logic for Mobile Menu -->
+    <input type="checkbox" id="nav-toggle">
 
-<div class="site-layout">
-    <div class="topbar-mobile">
-        <div class="brand-block">
-            <a href="/">
-                <img src="onlyspins logo.svg" alt="OnlySpins" class="brand-logo">
-            </a>
-        </div>
-        <div class="topbar-actions">
-            <a href="/login/"><button class="action-btn action-btn--ghost action-btn--compact">Inloggen</button></a>
-            <a href="/go/" class="action-btn action-btn--register action-btn--compact" role="button">Registreren</a>
-            <label for="nav-toggle" class="menu-toggle"><i class="fa-solid fa-bars"></i></label>
-        </div>
-    </div>
+    <div class="site-layout">
 
-    <aside class="side-panel">
-        <div class="side-panel__header">
+        <div class="topbar-mobile">
             <div class="brand-block">
-                <a href="/"><img src="onlyspins logo.svg" alt="OnlySpins" class="brand-logo"></a>
+                <a href="/">
+                    <img src="../onlyspins logo.svg" alt="OnlySpins Casino" class="brand-logo">
+                </a>
+            </div>
+
+            <div class="topbar-actions">
+                <a href="/login/">
+                    <button class="action-btn action-btn--ghost action-btn--compact">Kirjaudu</button>
+                </a>
+                <a href="/go/" class="action-btn action-btn--register action-btn--compact" role="button">Rekisteröidy</a>
+                <label for="nav-toggle" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
             </div>
         </div>
 
-        <nav class="side-panel__menu">
-            <a href="/" class="side-panel__link is-active"><i class="fa-solid fa-house"></i><span>Home</span></a>
-            <a href="#games" class="side-panel__link"><i class="fa-solid fa-gamepad"></i><span>Alle spellen</span></a>
-            <a href="#payment" class="side-panel__link"><i class="fa-solid fa-wallet"></i><span>Betalingen</span></a>
-        </nav>
+        <aside class="side-panel">
+            <div class="side-panel__header">
+                <div class="brand-block">
+                    <a href="/">
+                        <img src="../onlyspins logo.svg" alt="OnlySpins Casino" class="brand-logo">
+                    </a>
+                </div>
+            </div>
 
-        <div class="side-panel__footer">
-            <a href="/go/"><button class="action-btn action-btn--register">Registreren</button></a>
-            <a href="/login/"><button class="action-btn action-btn--ghost">Inloggen</button></a>
-        </div>
-    </aside>
+            <nav class="side-panel__menu">
+                <a href="/" class="side-panel__link is-active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Koti</span>
+                </a>
+                <a href="#games" class="side-panel__link">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Kaikki pelit</span>
+                </a>
+                <a href="/" class="side-panel__link">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Suositut</span>
+                    <span class="badge-hot">Hot</span>
+                </a>
+                <a href="/" class="side-panel__link">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Turnaukset</span>
+                </a>
+                <a href="/" class="side-panel__link">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Bonukset</span>
+                </a>
+                <a href="/" class="side-panel__link">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Sovellus</span>
+                </a>
+            </nav>
 
+            <div class="side-panel__footer">
+                <a href="/go/">
+                    <button class="action-btn action-btn--register">Rekisteröidy</button>
+                </a>
+                <a href="/login/">
+                    <button class="action-btn action-btn--ghost">Kirjaudu</button>
+                </a>
+            </div>
+        </aside>
     <main class="page-main">
         <section class="promo-hero">
             <div class="page-container">
@@ -95,24 +129,45 @@
             </div>
         </section>
 <!-- FAQ Section --> <section id="faq" class="faq-block"> <h2 class="section-heading" style="justify-content: center; margin-bottom: 2rem;">Usein Kysytyt Kysymykset</h2> <details> <summary>Onko mobiilipelaaminen OnlySpins casinolla yhtä sujuvaa kuin tietokoneella?</summary> <div class="faq-body">Yleisesti ottaen kyllä: selainpohjainen käyttöliittymämme on suunniteltu toimimaan myös puhelimella, ja tärkeimmät toiminnot (kirjautuminen, pelien haku, kassakäyttö) ovat saatavilla myös mobiilissa. Jos haluat nopeuttaa käyttöä, voit käyttää "pikakuvake"-tyyppistä ratkaisua aloitusnäytölläsi.</div> </details> <details> <summary>Mitä bonuksen kierrätysvaatimus tarkoittaa käytännössä casino OnlySpins -kasinolla?</summary> <div class="faq-body">Kierrätysvaatimus (wagering) tarkoittaa, että sinun täytyy panostaa bonuksella (ja usein myös talletuksella) tietty summa ennen kuin voit nostaa bonuksella voitetut varat. Esimerkiksi tervetuliaisbonus voi vaatia kierrätyksen (talletus + bonus) x35 ja ilmaiskierrosvoitoille x40.</div> </details> <details> <summary>Voinko nostaa voittoni, jos onlyspins casino pyytää asiakirjoja?</summary> <div class="faq-body">Kyllä, mutta nosto voi viivästyä kunnes asiakirjat on toimitettu ja tarkistettu. Voimme pyytää henkilötodistusta, osoitetodistusta ja todistetta maksutavan omistajuudesta, ja nosto käsitellään vasta tarvittavien tarkastusten jälkeen.</div> </details> <details> <summary>Miksi only spins ei näytä samaa nostotapaa kuin talletuksessa?</summary> <div class="faq-body">Tämä on melko yleistä: kaikki talletusvaihtoehdot eivät aina ole käytettävissä nostoihin. Suosittelemme valitsemaan vaihtoehtoisen nostotavan; jos sopivaa vaihtoehtoa ei ole, pankkisiirto on yleensä suositeltu vaihtoehto.</div> </details> <details> <summary>Mitkä pelit OnlySpins-pelihallissa kannattaa kokeilla ensimmäisenä?</summary> <div class="faq-body">Jos haluat tutustua ilman riskiä, etsi pelejä demo-tilalla ja kokeile tunnettuja slotteja, jotka ovat usein listojen kärjessä, kuten Gates of Olympus 1000 tai Book of Dead. Kun siirryt oikean rahan peleihin, valitse panoskoko joka sopii budjettisi ja huomioi mahdolliset panosrajat bonuksissa.</div> </details> </section>
-<footer class="page-footer">
-    <div class="footer-layout">
-        <div class="footer-column">
-            <div class="brand-block" style="margin-bottom: 1rem;">
-                <img src="../onlyspins logo.svg" alt="OnlySpins" class="brand-logo">
-            </div>
-            <p style="color: var(--text-secondary);">Pelaa vastuullisesti. 18+.</p>
-        </div>
-        <div class="footer-column">
-            <h4>Sivut</h4>
-            <ul>
-                <li><a href="/about-us/">Meistä</a></li>
-                <li><a href="/contact-us/">Ota yhteyttä</a></li>
-                <li><a href="/terms-and-conditions/">Käyttöehdot</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
+ <!-- Footer -->
+            <footer class="page-footer">
+                <div class="footer-layout">
+                    <div class="footer-column">
+                        <div class="brand-block" style="margin-bottom: 1rem;">
+                            <img src="../onlyspins logo.svg" alt="OnlySpins Casino" class="brand-logo">
+                        </div>
+                        <p style="color: #64748b;">Viihdettä parhaimmillaan. Pelaa vastuullisesti.</p>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Pelit</h4>
+                        <ul>
+                            <li><a href="/">Kolikkopelit</a></li>
+                            <li><a href="/">Live Casino</a></li>
+                            <li><a href="/">Jackpotit</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Yritys</h4>
+                        <ul>
+                            <li><a href="/about-us/">Tietoa meistä</a></li>
+                            <li><a href="mailto:support@only-spins.fi">support@only-spins.fi</a></li>
+                            <li><a href="/yhteystiedot/">Yhteystiedot</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Lakitiedot</h4>
+                        <ul>
+                            <li><a href="/terms-and-conditions/">Käyttöehdot</a></li>
+                            <li><a href="/privacy-policy/">Tietosuojakäytäntö</a></li>
+                            <li><a href="/responsible-gaming/">Vastuullinen pelaaminen</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
 
         <div class="trust-badges">
             <a href="https://www.gamstop.co.uk" target="_blank"><img src="/gamstop.png" alt="GamStop"></a>
