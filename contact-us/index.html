@@ -11,24 +11,75 @@
 </head>
 <body>
 
-<input type="checkbox" id="nav-toggle">
+ <!-- Checkbox Logic for Mobile Menu -->
+    <input type="checkbox" id="nav-toggle">
 
-<div class="site-layout">
+    <div class="site-layout">
 
-<div class="topbar-mobile">
-    <div class="brand-block">
-        <a href="/">
-            <img src="../onlyspins-logo.webp" alt="OnlySpins Casino" class="brand-logo">
-        </a>
-    </div>
+        <div class="topbar-mobile">
+            <div class="brand-block">
+                <a href="/">
+                    <img src="../onlyspins-logo.webp" alt="OnlySpins Casino" class="brand-logo">
+                </a>
+            </div>
 
-<div class="topbar-actions">
-    <a href="/login/">
-        <button class="action-btn action-btn--ghost action-btn--compact">Kirjaudu</button>
-    </a>
-    <a href="/go/" class="action-btn action-btn--register action-btn--compact" role="button">Rekisteröidy</a>
-</div>
-</div>
+            <div class="topbar-actions">
+                <a href="/login/">
+                    <button class="action-btn action-btn--ghost action-btn--compact">Kirjaudu</button>
+                </a>
+                <a href="/go/" class="action-btn action-btn--register action-btn--compact" role="button">Rekisteröidy</a>
+                <label for="nav-toggle" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+        </div>
+
+        <aside class="side-panel">
+            <div class="side-panel__header">
+                <div class="brand-block">
+                    <a href="/">
+                        <img src="../onlyspins-logo.webp" alt="OnlySpins Casino" class="brand-logo">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="side-panel__menu">
+                <a href="/" class="side-panel__link is-active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Koti</span>
+                </a>
+                <a href="#games" class="side-panel__link">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Kaikki pelit</span>
+                </a>
+                <a href="/" class="side-panel__link">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Suositut</span>
+                    <span class="badge-hot">Hot</span>
+                </a>
+                <a href="/" class="side-panel__link">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Turnaukset</span>
+                </a>
+                <a href="/" class="side-panel__link">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Bonukset</span>
+                </a>
+                <a href="/" class="side-panel__link">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Sovellus</span>
+                </a>
+            </nav>
+
+            <div class="side-panel__footer">
+                <a href="/go/">
+                    <button class="action-btn action-btn--register">Rekisteröidy</button>
+                </a>
+                <a href="/login/">
+                    <button class="action-btn action-btn--ghost">Kirjaudu</button>
+                </a>
+            </div>
+        </aside>
 
 <main class="page-main">
 
